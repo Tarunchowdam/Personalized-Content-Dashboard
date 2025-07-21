@@ -1,5 +1,9 @@
 # Personalized Content Dashboard
 
+**Live Demo:** [https://your-demo-link.com](https://your-demo-link.com)
+
+**Demo Video:** [https://your-demo-video-link.com](https://your-demo-video-link.com)
+
 A modern, fully responsive dashboard for tracking and interacting with personalized news, movie recommendations, and social posts. Built with Next.js, React, TypeScript, Redux Toolkit, and Tailwind CSS.
 
 ---

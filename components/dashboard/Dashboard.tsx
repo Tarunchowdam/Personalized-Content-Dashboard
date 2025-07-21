@@ -13,9 +13,10 @@ import { SearchResults } from './SearchResults';
 import { LoadingSpinner } from '../ui/LoadingSpinner';
 import { ErrorMessage } from '../ui/ErrorMessage';
 import { PreferencesModal } from './PreferencesModal';
+import { AppDispatch } from '@/store';
 
 export function Dashboard() {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch<AppDispatch>();
   const { user, content, isLoading, error, searchResults, filters } = useSelector(
     (state: RootState) => state.dashboard
   );
@@ -44,7 +45,7 @@ export function Dashboard() {
     // Fetch content if not loaded
     if (content.length === 0 && !isLoading) {
       const categories = user?.preferences.categories || ['technology', 'sports', 'finance'];
-      dispatch(fetchPersonalizedContent(categories));
+      dispatch<any>(fetchPersonalizedContent(categories));
     }
   }, [dispatch, user, content.length, isLoading]);
 
