@@ -38,7 +38,7 @@ export function TrendingSection() {
           <TrendingUp className="w-5 h-5 text-primary" />
           <h3 className="card-title">Trending</h3>
         </div>
-        <p className="card-description">What's popular right now</p>
+        <p className="card-description">What&apos;s popular right now</p>
       </div>
       <div className="card-content">
         {isLoading ? (
